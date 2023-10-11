@@ -7,7 +7,7 @@ from dash import Dash, dcc, html, Input, Output
 import streamlit as st
 
 
-df = pd.read_csv(r"C:\Users\USER\Desktop\Data Visualization course\housing.csv")
+df = pd.read_csv(r"https://github.com/Makram57/Streamlit1/blob/main/housing.csv")
 
 
 st.header("The following plot shows the average house price in America per location",divider='rainbow')
