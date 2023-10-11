@@ -3,8 +3,8 @@ import streamlit as st
 import plotly.express as px
 
 
-df22 = pd.read_csv(r"C:\Users\USER\Desktop\Data Visualization course\Mall_Customers.csv")
-
+url = r"https://raw.githubusercontent.com/Makram57/Streamlit1/main/Mall_Customers.csv"
+df22 = pd.read_csv(url, encoding='utf-8')
 st.header("The following plot shows a Mall Customer Behavior versus their Annual Income, Spending Score, and Age",divider='rainbow')
 
 AnnualIncome_filter = st.slider("Select Annual Income Range", min_value=int(df22['Annual Income (k$)'].min()), max_value=int(df22['Annual Income (k$)'].max()), value=(int(df22['Annual Income (k$)'].min()), int(df22['Annual Income (k$)'].max())))
